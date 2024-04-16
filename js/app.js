@@ -4236,7 +4236,8 @@
             speed: 800,
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true
+                clickable: true,
+                dynamicBullets: true
             },
             navigation: {
                 prevEl: ".navigation-faq-prev",
@@ -4279,7 +4280,8 @@
                         speed: 800,
                         pagination: {
                             el: ".swiper-pagination",
-                            clickable: true
+                            clickable: true,
+                            dynamicBullets: true
                         },
                         navigation: {
                             prevEl: ".navigation-faq-prev",
