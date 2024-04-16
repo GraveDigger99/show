@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240410023526">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240416184638">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -24,6 +24,7 @@
 							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Магазин</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Расписание и билеты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -50,9 +51,15 @@
 			<section data-fullscreen class="hero">
 				<div class="hero__container">
 					<h1 fadeinup data-watch data-watch-once class="hero__title title">
-						Уникальное театрализованное мультимедийное лазерно-световое шоу <span>«Великаны дагестана»</span>
+						<div class="title title_desktop">
+							Мультимедийный природный театр <span>«ВЕЛИКАНЫ Дагестана»</span>
+						</div>
+						<div class="title title_mobile">
+							Уникальное театрализованное мультимедийное лазерно-световое шоу <span>«Великаны дагестана»</span>
+						</div>
 					</h1>
-					<p fadeinup data-watch data-watch-once class="hero__descr">Вы получите незабываемые эмоции и впечатления, станете частью сказочного мира, а
+					<p fadeinup data-watch data-watch-once class="hero__descr">Вы получите незабываемые эмоции и впечатления,
+						станете частью сказочного мира, а
 						также узнаете все тайны гор Дагестана</p>
 					<button class="hero__button-arrow button-arrow">
 						<span>Подробнее про шоу</span>
@@ -64,37 +71,35 @@
 			</section>
 			<section class="what">
 				<div class="what__container">
-					<h3 fadeinup data-watch data-watch-once class="what__topic topic">Что такое «Великаны дагестана»</h3>
+					<h3 fadeinup data-watch data-watch-once class="what__topic topic">Что такое «ВЕЛИКАНЫ дагестана»</h3>
 					<div class="what__items">
 						<div class="what__row">
 							<div class="what__item">
-								<div class="what__text">Видеомэппинг шоу с проекцией на скалах</div>
+								<div class="what__text">Мультимедийное шоу об истории и культуре Дагестана</div>
 							</div>
 							<div class="what__item">
-								<div class="what__text">Одобрение министра культуры республики Дагестан</div>
+								<div class="what__text">Революционная технология 3D Naked-Eye</div>
 							</div>
 							<div class="what__item">
-								<div class="what__text">Неповторимые эмоции и полное погружение</div>
-							</div>
-						</div>
-						<div class="what__row">
-							<div class="what__item">
-								<div class="what__text">Самые последние технологии шоу-света в уникальной художественной обертке
-								</div>
-							</div>
-							<div class="what__item">
-								<div class="what__text">Тысячи положительных отзывов от уже посетивших “Великаны Дагестана”
-								</div>
+								<div class="what__text">Уникальная природная сцена</div>
 							</div>
 						</div>
 						<div class="what__row">
 							<div class="what__item">
-								<div class="what__text">Полное вовлечение - более 2000 местных жителей участвуют в шоу как
-									актеры
+								<div class="what__text">Иммерсивное участие зрителей</div>
+							</div>
+							<div class="what__item">
+								<div class="what__text">Тысячи восторженных отзывов
+								</div>
+							</div>
+						</div>
+						<div class="what__row">
+							<div class="what__item">
+								<div class="what__text">Высокая оценка от Министерства Культуры Республики Дагестан
 								</div>
 							</div>
 							<div class="what__item">
-								<div class="what__text">Более 4000 туристов уже посетивших “Великаны Дагестана”</div>
+								<div class="what__text">Одна из достопримечательностей региона</div>
 							</div>
 							<div class="what__actions">
 								<a href="#" class="what__button-arrow button-arrow button-arrow_column">
@@ -137,13 +142,7 @@
 								</svg>
 							</button>
 							<div fadeinup data-watch data-watch-once data-da=".video__container,767.98,first" class="video__content">
-								<h2 class="video__subtitle subtitle">Посмотрите видео с нашего шоу</h2>
-								<p class="video__description">
-									Lorem ipsum dolor sit amet consectetur. Consectetur suspendisse vel curabitur tincidunt
-									adipiscing. Volutpat urna felis
-									at eget aenean nam viverra tellus sem. Nisl euismod rhoncus habitasse duis sit. Magnis ornare
-									sit sed orci.
-								</p>
+								<h2 class="video__subtitle subtitle">Промо «ВЕЛИКАНЫ Дагестана»</h2>
 							</div>
 						</div>
 					</div>
@@ -323,35 +322,34 @@
 							<div class="waiting__slide swiper-slide">
 								<span class="waiting__count">01</span>
 								<div class="waiting__title">Лазерная анимация</div>
-								<p class="waiting__text">Lorem ipsum dolor sit amet consectetur. Praesent orci nulla est
-									lobortis justo.</p>
+								<p class="waiting__text">Незабываемое шоу с использованием передовых технологий</p>
 							</div>
 							<div class="waiting__slide swiper-slide">
 								<span class="waiting__count">02</span>
 								<div class="waiting__title">Театрализованное представление</div>
-								<p class="waiting__text">Интерактивная форма со зрителем</p>
+								<p class="waiting__text">История Дагестана из уст Великанов</p>
 							</div>
 							<div class="waiting__slide swiper-slide">
 								<span class="waiting__count">03</span>
 								<div class="waiting__title">Видеопроекция на скалах, в которой скрывались главные герои -
 									Великаны
 								</div>
-								<p class="waiting__text">Интерактивная форма со зрителем</p>
+								<p class="waiting__text">Яркие спецэффекты</p>
 							</div>
 							<div class="waiting__slide swiper-slide">
 								<span class="waiting__count">04</span>
 								<div class="waiting__title">Документальное архивное содержание</div>
-								<p class="waiting__text">Интерактивная форма со зрителем</p>
+								<p class="waiting__text">Интерактивное участие в представлении</p>
 							</div>
 							<div class="waiting__slide swiper-slide">
 								<span class="waiting__count">05</span>
 								<div class="waiting__title">Шоу номера с артистами оригинального жанра</div>
-								<p class="waiting__text">Интерактивная форма со зрителем</p>
+								<p class="waiting__text">Ожившие мифы и легенды</p>
 							</div>
 							<div class="waiting__slide swiper-slide">
 								<span class="waiting__count">06</span>
 								<div class="waiting__title">Интерактивная форма со зрителем</div>
-								<p class="waiting__text">Интерактивная форма со зрителем</p>
+								<p class="waiting__text">Впечатления на всю жизнь</p>
 							</div>
 						</div>
 						<div class="swiper-pagination swiper-pagination_waiting"></div>
@@ -517,45 +515,156 @@
 						<div class="faq__wrapper swiper-wrapper">
 							<div class="faq__slide swiper-slide">
 								<span class="faq__step">01</span>
-								<h3 class="faq__label">Как купить билеты на шоу "Великаны Дагестана"?</h3>
-								<p class="faq__text">Билеты можно приобрести на нашем официальном сайте в разделе "Расписание и
-									билеты". Там вы найдете информацию о датах
-									представлений и сможете выбрать удобное время и места</p>
+								<h3 class="faq__label">Где можно купить билеты на шоу?</h3>
+								<p class="faq__text">
+									Билеты можно приобрести у промоутеров на площадке Дубки, на территории комплекса Главрыба,
+									онлайн на сайте шоу, а также
+									у администратора непосредственно перед шоу.
+								</p>
 							</div>
 							<div class="faq__slide swiper-slide">
 								<span class="faq__step">02</span>
-								<h3 class="faq__label">Можно ли вернуть билеты?</h3>
+								<h3 class="faq__label">Как долго длится шоу?</h3>
 								<p class="faq__text">
-									Возврат билетов возможен не позднее чем за 72 часа до начала спектакля. Подробные условия
-									возврата описаны в разделе
-									"Правила покупки билетов"
+									Шоу длится 50 минут.
 								</p>
 							</div>
 							<div class="faq__slide swiper-slide">
 								<span class="faq__step">03</span>
-								<h3 class="faq__label">Есть ли скидки для детей или пенсионеров?</h3>
+								<h3 class="faq__label">Можно ли вернуть купленный билет?</h3>
 								<p class="faq__text">
-									Да, для детей младше 7 лет предусмотрен бесплатный вход без предоставления отдельного места.
-									Пенсионерам предоставляется
-									скидка 10% при предъявлении пенсионного удостоверения
+									Да, билет можно сдать с возвратом средств на карту или наличными, в зависимости от способа
+									покупки.
 								</p>
 							</div>
 							<div class="faq__slide swiper-slide">
 								<span class="faq__step">04</span>
-								<h3 class="faq__label">Могу ли я прийти на шоу с фотоаппаратом?</h3>
+								<h3 class="faq__label">Как организованы места для зрителей?</h3>
 								<p class="faq__text">
-									Съемка на профессиональную фото- или видеотехнику требует предварительного согласования
-									с организаторами. Свяжитесь с
-									нами для получения разрешения
+									На шоу нет номерных мест. Предусмотрены стулья и мягкие подушки для посадки на деревянные
+									лестницы на смотровой
+									площадке.
 								</p>
 							</div>
 							<div class="faq__slide swiper-slide">
 								<span class="faq__step">05</span>
-								<h3 class="faq__label">Какие меры безопасности предпринимаются на входе?</h3>
+								<h3 class="faq__label">Что происходит, если начнется дождь?</h3>
 								<p class="faq__text">
-									На входе проводится проверка личных вещей. Запрещено проносить острые предметы, алкогольные
-									напитки и вещества,
-									запрещенные к распространению
+									Если в час начала шоу идет сильный дождь и площадка открытая, мероприятие отменяется.
+									Исключение может быть сделано для
+									слабого и мелкого дождя.
+
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">06</span>
+								<h3 class="faq__label">До какого возраста дети могут посещать шоу бесплатно?</h3>
+								<p class="faq__text">
+									Дети до 5 лет могут посещать шоу бесплатно, но без предоставления отдельного места (на
+									коленках у родителей).
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">07</span>
+								<h3 class="faq__label">Какие условия для детских билетов?</h3>
+								<p class="faq__text">
+									Для детей до 12 лет предусмотрены детские билеты при предъявлении свидетельства о рождении.
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">08</span>
+								<h3 class="faq__label">Как проходит проверка билетов?</h3>
+								<p class="faq__text">
+									Проверка билетов и выдача браслетов на руки производится непосредственно перед началом
+									мероприятия администратором.
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">09</span>
+								<h3 class="faq__label">Есть ли парковка у пещерного комплекса?</h3>
+								<p class="faq__text">
+									Да, перед пещерным комплексом есть парковка для посетителей.
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">10</span>
+								<h3 class="faq__label">Как узнать время начала шоу?</h3>
+								<p class="faq__text">
+									Время начала шоу указано на сайте "Великаны Дагестана" в разделе "расписание и билеты".
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">11</span>
+								<h3 class="faq__label">Что можно купить в кофейне на площадке?</h3>
+								<p class="faq__text">
+									В кофейне на площадке можно приобрести кофе, чай и бутерброды.
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">12</span>
+								<h3 class="faq__label">Где можно купить мерч шоу?</h3>
+								<p class="faq__text">
+									Мерч шоу доступен для покупки на смотровой площадке у администратора начиная с 16:30, а также
+									онлайн на сайте "Великанов
+									Дагестана".
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">13</span>
+								<h3 class="faq__label">Где проводится шоу?</h3>
+								<p class="faq__text">
+									Шоу проводится на смотровой площадке пещерного комплекса Нохъо.
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">14</span>
+								<h3 class="faq__label">Какова вместимость смотровой площадки?</h3>
+								<p class="faq__text">
+									На смотровой площадке может разместиться не более 150 человек.
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">15</span>
+								<h3 class="faq__label">За сколько времени нужно прийти на шоу?</h3>
+								<p class="faq__text">
+									Рекомендуется приходить на шоу минимум за 30 минут, а идеально — за час до начала.
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">16</span>
+								<h3 class="faq__label">Возможен ли индивидуальный просмотр шоу?</h3>
+								<p class="faq__text">
+									Да, возможен индивидуальный просмотр шоу по предварительной договорённости с администратором.
+									Также можно организовать
+									на площадке другие мероприятия, такие как свадьбы или дни рождения, после показа шоу.
+
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">17</span>
+								<h3 class="faq__label">Можно ли после шоу поздравить кого-то лазерной надписью на скале?</h3>
+								<p class="faq__text">
+									Да, это возможно. Уточните условия и расценки у администратора.
+
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">18</span>
+								<h3 class="faq__label">Какие меры безопасности предусмотрены на шоу?</h3>
+								<p class="faq__text">
+									На площадке присутствует обеспечение безопасности, включая охрану и медицинский персонал. Все
+									мероприятия проводятся в
+									соответствии с действующими нормами и правилами безопасности.
+
+								</p>
+							</div>
+							<div class="faq__slide swiper-slide">
+								<span class="faq__step">19</span>
+								<h3 class="faq__label">Предусмотрены ли скидки?</h3>
+								<p class="faq__text">
+									Скидки по количеству посетителей и принадлежности к льготным социальным группам обсуждаются
+									индивидуально.
+
 								</p>
 							</div>
 						</div>
@@ -581,20 +690,50 @@
 					<div class="team__items">
 						<div class="team__item">
 							<div class="team__avatar">
-								<picture><source srcset="img/team/01.webp" type="image/webp"><img src="img/team/01.png" alt="image"></picture>
-							</div>
-							<div class="team__content">
-								<span class="team__name">Халилов Руслан</span>
-								<p>автор сценария, режиссер-постановщик проекта</p>
-							</div>
-						</div>
-						<div class="team__item">
-							<div class="team__avatar">
 								<picture><source srcset="img/team/02.webp" type="image/webp"><img src="img/team/02.png" alt="image"></picture>
 							</div>
 							<div class="team__content">
 								<span class="team__name">Золотарев Дмитрий</span>
 								<p>автор идеи, продюсер проекта</p>
+								<a href="mailto:director@velikanydagestana.ru" class="team__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_275_1818)">
+											<path d="M23.954 5.54175L15.536 13.9597C14.5974 14.896 13.3257 15.4218 12 15.4218C10.6743 15.4218 9.40263 14.896 8.464 13.9597L0.046 5.54175C0.032 5.69975 0 5.84275 0 5.99975V17.9997C0.00158786 19.3253 0.528882 20.5962 1.46622 21.5335C2.40356 22.4709 3.67441 22.9982 5 22.9997H19C20.3256 22.9982 21.5964 22.4709 22.5338 21.5335C23.4711 20.5962 23.9984 19.3253 24 17.9997V5.99975C24 5.84275 23.968 5.69975 23.954 5.54175Z" fill="#B18BB1" />
+											<path d="M14.122 12.5458L23.256 3.41076C22.8135 2.67707 22.1895 2.06979 21.444 1.64749C20.6985 1.22518 19.8568 1.0021 19 0.999756H5.00002C4.14324 1.0021 3.30152 1.22518 2.55605 1.64749C1.81057 2.06979 1.1865 2.67707 0.744019 3.41076L9.87802 12.5458C10.4416 13.1071 11.2046 13.4222 12 13.4222C12.7954 13.4222 13.5584 13.1071 14.122 12.5458Z" fill="#B18BB1" />
+										</g>
+										<defs>
+											<clipPath id="clip0_275_1818">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>director@velikanydagestana.ru</span>
+								</a>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__avatar">
+								<picture><source srcset="img/team/01.webp" type="image/webp"><img src="img/team/01.png" alt="image"></picture>
+							</div>
+							<div class="team__content">
+								<span class="team__name">Халилов Руслан</span>
+								<p>
+									автор сценария,режиссер-постановщик проекта
+								</p>
+								<a href="mailto:r.halilow-event@yandex.ru" class="team__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_275_1818)">
+											<path d="M23.954 5.54175L15.536 13.9597C14.5974 14.896 13.3257 15.4218 12 15.4218C10.6743 15.4218 9.40263 14.896 8.464 13.9597L0.046 5.54175C0.032 5.69975 0 5.84275 0 5.99975V17.9997C0.00158786 19.3253 0.528882 20.5962 1.46622 21.5335C2.40356 22.4709 3.67441 22.9982 5 22.9997H19C20.3256 22.9982 21.5964 22.4709 22.5338 21.5335C23.4711 20.5962 23.9984 19.3253 24 17.9997V5.99975C24 5.84275 23.968 5.69975 23.954 5.54175Z" fill="#B18BB1" />
+											<path d="M14.122 12.5458L23.256 3.41076C22.8135 2.67707 22.1895 2.06979 21.444 1.64749C20.6985 1.22518 19.8568 1.0021 19 0.999756H5.00002C4.14324 1.0021 3.30152 1.22518 2.55605 1.64749C1.81057 2.06979 1.1865 2.67707 0.744019 3.41076L9.87802 12.5458C10.4416 13.1071 11.2046 13.4222 12 13.4222C12.7954 13.4222 13.5584 13.1071 14.122 12.5458Z" fill="#B18BB1" />
+										</g>
+										<defs>
+											<clipPath id="clip0_275_1818">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>r.halilow-event@yandex.ru</span>
+								</a>
 							</div>
 						</div>
 						<div class="team__item">
@@ -602,8 +741,45 @@
 								<picture><source srcset="img/team/03.webp" type="image/webp"><img src="img/team/03.png" alt="image"></picture>
 							</div>
 							<div class="team__content">
-								<span class="team__name">Романченко Рома</span>
+								<span class="team__name">Романченко Роман</span>
 								<p>технический директор</p>
+								<a href="mailto:tech@velikanydagestana.ru" class="team__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_275_1818)">
+											<path d="M23.954 5.54175L15.536 13.9597C14.5974 14.896 13.3257 15.4218 12 15.4218C10.6743 15.4218 9.40263 14.896 8.464 13.9597L0.046 5.54175C0.032 5.69975 0 5.84275 0 5.99975V17.9997C0.00158786 19.3253 0.528882 20.5962 1.46622 21.5335C2.40356 22.4709 3.67441 22.9982 5 22.9997H19C20.3256 22.9982 21.5964 22.4709 22.5338 21.5335C23.4711 20.5962 23.9984 19.3253 24 17.9997V5.99975C24 5.84275 23.968 5.69975 23.954 5.54175Z" fill="#B18BB1" />
+											<path d="M14.122 12.5458L23.256 3.41076C22.8135 2.67707 22.1895 2.06979 21.444 1.64749C20.6985 1.22518 19.8568 1.0021 19 0.999756H5.00002C4.14324 1.0021 3.30152 1.22518 2.55605 1.64749C1.81057 2.06979 1.1865 2.67707 0.744019 3.41076L9.87802 12.5458C10.4416 13.1071 11.2046 13.4222 12 13.4222C12.7954 13.4222 13.5584 13.1071 14.122 12.5458Z" fill="#B18BB1" />
+										</g>
+										<defs>
+											<clipPath id="clip0_275_1818">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>tech@velikanydagestana.ru</span>
+								</a>
+							</div>
+						</div>
+						<div class="team__item">
+							<div class="team__avatar">
+								<picture><source srcset="img/team/04.webp" type="image/webp"><img src="img/team/04.png" alt="image"></picture>
+							</div>
+							<div class="team__content">
+								<span class="team__name">Петруновская Эмма Владиславовна</span>
+								<p>директор по развитию</p>
+								<a href="mailto:tech@velikanydagestana.ru" class="team__link">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_275_1818)">
+											<path d="M23.954 5.54175L15.536 13.9597C14.5974 14.896 13.3257 15.4218 12 15.4218C10.6743 15.4218 9.40263 14.896 8.464 13.9597L0.046 5.54175C0.032 5.69975 0 5.84275 0 5.99975V17.9997C0.00158786 19.3253 0.528882 20.5962 1.46622 21.5335C2.40356 22.4709 3.67441 22.9982 5 22.9997H19C20.3256 22.9982 21.5964 22.4709 22.5338 21.5335C23.4711 20.5962 23.9984 19.3253 24 17.9997V5.99975C24 5.84275 23.968 5.69975 23.954 5.54175Z" fill="#B18BB1" />
+											<path d="M14.122 12.5458L23.256 3.41076C22.8135 2.67707 22.1895 2.06979 21.444 1.64749C20.6985 1.22518 19.8568 1.0021 19 0.999756H5.00002C4.14324 1.0021 3.30152 1.22518 2.55605 1.64749C1.81057 2.06979 1.1865 2.67707 0.744019 3.41076L9.87802 12.5458C10.4416 13.1071 11.2046 13.4222 12 13.4222C12.7954 13.4222 13.5584 13.1071 14.122 12.5458Z" fill="#B18BB1" />
+										</g>
+										<defs>
+											<clipPath id="clip0_275_1818">
+												<rect width="24" height="24" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+									<span>pr@velikanydagestana.ru</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -618,19 +794,22 @@
 								<p class="contacts__text">
 									Контактная информация для связи с организаторами шоу
 								</p>
+								<p class="contacts__description">
+									а также для заказа индивидуального мероприятия под ключ
+								</p>
 								<a href="#" class="contacts__btn">Связаться</a>
 							</div>
 							<ul class="contacts__list">
 								<li>
-									<a href="tel:899555353553">
+									<a href="tel:+74953202088">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M23.0001 10.9996C22.7348 10.9996 22.4805 10.8942 22.2929 10.7067C22.1054 10.5191 22.0001 10.2648 22.0001 9.99956C21.9979 7.87848 21.1544 5.84488 19.6546 4.34505C18.1547 2.84522 16.1211 2.00168 14.0001 1.99956C13.7348 1.99956 13.4805 1.89421 13.2929 1.70667C13.1054 1.51913 13.0001 1.26478 13.0001 0.999563C13.0001 0.734346 13.1054 0.479992 13.2929 0.292456C13.4805 0.104919 13.7348 -0.0004376 14.0001 -0.0004376C16.6513 0.002474 19.1932 1.05698 21.0679 2.93171C22.9426 4.80644 23.9971 7.34829 24.0001 9.99956C24.0001 10.2648 23.8947 10.5191 23.7072 10.7067C23.5196 10.8942 23.2653 10.9996 23.0001 10.9996ZM20.0001 9.99956C20.0001 8.40826 19.3679 6.88214 18.2427 5.75692C17.1175 4.6317 15.5914 3.99956 14.0001 3.99956C13.7348 3.99956 13.4805 4.10492 13.2929 4.29246C13.1054 4.47999 13.0001 4.73435 13.0001 4.99956C13.0001 5.26478 13.1054 5.51913 13.2929 5.70667C13.4805 5.89421 13.7348 5.99956 14.0001 5.99956C15.0609 5.99956 16.0783 6.42099 16.8285 7.17114C17.5786 7.92128 18.0001 8.9387 18.0001 9.99956C18.0001 10.2648 18.1054 10.5191 18.2929 10.7067C18.4805 10.8942 18.7348 10.9996 19.0001 10.9996C19.2653 10.9996 19.5196 10.8942 19.7072 10.7067C19.8947 10.5191 20.0001 10.2648 20.0001 9.99956ZM22.1831 22.1636L23.0931 21.1146C23.6723 20.5335 23.9975 19.7465 23.9975 18.9261C23.9975 18.1056 23.6723 17.3186 23.0931 16.7376C23.0621 16.7066 20.6561 14.8556 20.6561 14.8556C20.0786 14.3059 19.3116 13.9998 18.5143 14.0009C17.7171 14.0021 16.951 14.3103 16.3751 14.8616L14.4691 16.4676C12.9132 15.8237 11.4999 14.8787 10.3103 13.6871C9.12074 12.4954 8.17827 11.0805 7.53705 9.52356L9.13705 7.62356C9.68877 7.04774 9.99735 6.28144 9.99865 5.48397C9.99996 4.68649 9.69388 3.91919 9.14405 3.34156C9.14405 3.34156 7.29105 0.938563 7.26005 0.907562C6.6895 0.333311 5.91593 0.00658442 5.10648 -0.00202282C4.29702 -0.01063 3.51668 0.299573 2.93405 0.861562L1.78405 1.86156C-5.00995 9.74356 9.62005 24.2606 17.7621 23.9996C18.5842 24.0043 19.399 23.8443 20.1584 23.529C20.9177 23.2136 21.6061 22.7494 22.1831 22.1636Z" fill="#B18BB1" />
 										</svg>
-										<span>899555353553</span>
+										<span>+7(495) 320-20-88</span>
 									</a>
 								</li>
 								<li>
-									<a href="mailto:email@email.com">
+									<a href="mailto:manager@velikanydagestana.ru">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<g clip-path="url(#clip0_240_920)">
 												<path d="M23.954 5.54175L15.536 13.9597C14.5974 14.896 13.3257 15.4218 12 15.4218C10.6743 15.4218 9.40263 14.896 8.464 13.9597L0.046 5.54175C0.032 5.69975 0 5.84275 0 5.99975V17.9997C0.00158786 19.3253 0.528882 20.5962 1.46622 21.5335C2.40356 22.4709 3.67441 22.9982 5 22.9997H19C20.3256 22.9982 21.5964 22.4709 22.5338 21.5335C23.4711 20.5962 23.9984 19.3253 24 17.9997V5.99975C24 5.84275 23.968 5.69975 23.954 5.54175Z" fill="#B18BB1" />
@@ -642,7 +821,7 @@
 												</clipPath>
 											</defs>
 										</svg>
-										<span>email@email.com</span>
+										<span>manager@velikanydagestana.ru</span>
 									</a>
 								</li>
 								<li>
@@ -658,14 +837,56 @@
 												</clipPath>
 											</defs>
 										</svg>
-										<span>Dagestan, Kakie-to mountains</span>
+										<span>Дагестан, Пещера Нохъо</span>
 									</a>
 								</li>
 							</ul>
 						</div>
 						<div class="contacts__map">
-							<iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Abb319e213a681d89fd34f5497764e7ccf8ae31f40c0195ee9ab871d11d65f380&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+							<iframe src="https://yandex.com/map-widget/v1/?um=constructor%3Ad5fabbded6dc7dfba1fb807ad8e8a4945ff536ca2d5d77bce203e77f6c7b0ded&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+
 						</div>
+					</div>
+				</div>
+			</section>
+			<section class="rules">
+				<div class="rules__container">
+					<h2 class="rules__subtitle">Правила покупки билетов</h2>
+					<div class="rules__items">
+						<p>
+							1. Оформление заказа: Билеты на мероприятие доступны для покупки на нашем официальном сайте.
+							Пожалуйста, следуйте
+							инструкциям для выбора мест и заполнения необходимой информации.
+						</p>
+						<p>
+							2. Оплата: Принимаются различные способы оплаты, включая кредитные и дебетовые карты, а также
+							электронные платежные
+							системы. После завершения процесса оплаты вы получите подтверждение заказа по электронной почте.
+						</p>
+						<p>
+							3. Получение билетов: Билеты могут быть предоставлены в электронном виде, которые необходимо
+							распечатать или предъявить
+							на мобильном устройстве в день мероприятия.
+						</p>
+						<p>
+							4. Возврат и обмен: Билеты подлежат возврату или обмену в соответствии с политикой организаторов.
+							Возврат денежных средств осуществляется в течение 30 дней в зависимости от Вашего банка.
+						</p>
+						<p>
+							5. Изменения в мероприятии: В случае изменения даты, времени или места проведения мероприятия, о
+							планах и возможностях
+							возврата или обмена билетов будет сообщено дополнительно.
+						</p>
+						<p>
+							6. Безопасность транзакций: Все транзакции на нашем сайте защищены современными методами
+							шифрования, обеспечивая
+							безопасность ваших личных данных и платежной информации.
+						</p>
+						<p>
+							7. Обслуживание клиентов: При возникновении вопросов или проблем, связанных с покупкой билетов,
+							пожалуйста, обращайтесь
+							в службу поддержки через указанные на сайте контакты.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -695,6 +916,9 @@
 					</li>
 					<li>
 						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Расписание и билеты</a>
 					</li>
 				</ul>
 			</nav>
@@ -757,7 +981,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240410023526"></script>
+	<script src="js/app.min.js?_v=20240416184638"></script>
 	<script>
 		// 2. This code loads the IFrame Player API code asynchronously.
 		var tag = document.createElement('script');

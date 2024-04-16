@@ -7539,6 +7539,8 @@
             return C.$ === S && (C.$ = Gt), e && C.jQuery === S && (C.jQuery = Vt), S;
         }, "undefined" == typeof e && (C.jQuery = C.$ = S), S;
     }));
+    const input = document.querySelector(".quantity__input");
+    console.log(input.value);
     window["FLS"] = false;
     isWebp();
     addTouchClass();
