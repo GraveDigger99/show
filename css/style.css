@@ -1988,9 +1988,19 @@ body {
   margin-bottom: 1rem;
 }
 
+.gallery__slide {
+  overflow: hidden;
+}
+
 .gallery__slide img {
   max-width: 100%;
   border-radius: 12px;
+  height: 554px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .swiper {
@@ -3074,6 +3084,10 @@ button.swiper-pagination-bullet {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .gallery__slide img {
+    height: 400px;
+  }
 }
 
 @media (max-width: 47.99875em) {
@@ -3455,6 +3469,10 @@ button.swiper-pagination-bullet {
 
   .gallery {
     padding-bottom: 2.5rem;
+  }
+
+  .gallery__slide img {
+    height: 350px;
   }
 }
 
