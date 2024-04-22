@@ -3120,6 +3120,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 47.99875em) {
+  [class*=__container] {
+    padding: 0 0.9375rem !important;
+  }
+
   .button-arrow svg {
     width: 3rem;
   }
@@ -3198,6 +3202,12 @@ button.swiper-pagination-bullet {
     gap: 1.25rem;
   }
 
+  .header__action {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
   .header__menu {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -3207,11 +3217,19 @@ button.swiper-pagination-bullet {
   .header__social {
     position: relative;
     z-index: 11;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .header__button {
     position: relative;
     z-index: 11;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
   }
 
   .menu__body {
@@ -3488,10 +3506,6 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 29.99875em) {
-  .header__button {
-    display: none;
-  }
-
   .video__desktop {
     display: none;
   }
@@ -3555,7 +3569,7 @@ button.swiper-pagination-bullet {
   }
 
   .hero__title span {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
   }
 
   .hero__descr {
@@ -3796,15 +3810,15 @@ button.swiper-pagination-bullet {
     }
 }
 
-@supports (font-size: clamp( 1.75rem , 0.8794642857rem  +  3.869047619vw , 5rem )) {
+@supports (font-size: clamp( 1.625rem , 0.7209821429rem  +  4.0178571429vw , 5rem )) {
     .hero__title span {
-      font-size: clamp( 1.75rem , 0.8794642857rem  +  3.869047619vw , 5rem );
+      font-size: clamp( 1.625rem , 0.7209821429rem  +  4.0178571429vw , 5rem );
     }
 }
 
-@supports not (font-size: clamp( 1.75rem , 0.8794642857rem  +  3.869047619vw , 5rem )) {
+@supports not (font-size: clamp( 1.625rem , 0.7209821429rem  +  4.0178571429vw , 5rem )) {
     .hero__title span {
-      font-size: calc(1.75rem + 3.25 * (100vw - 22.5rem) / 84);
+      font-size: calc(1.625rem + 3.375 * (100vw - 22.5rem) / 84);
     }
 }
 
