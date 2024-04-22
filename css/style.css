@@ -1940,15 +1940,6 @@ body {
   height: 100%;
 }
 
-.no-webp .waiting__slide:nth-child(2){
-  background: url("../img/decors/02.png") center/cover no-repeat; }
-
-.no-webp .waiting__slide:nth-child(3){
-  background: url("../img/decors/03.png") center/cover no-repeat; }
-
-.no-webp .waiting__slide:nth-child(6){
-  background: url("../img/decors/06.png") center/cover no-repeat; }
-
 .waiting__count {
   font-weight: 700;
   line-height: 120%;
@@ -2873,6 +2864,15 @@ button.swiper-pagination-bullet {
     width: 38px;
     background: url("../img/ticket-place.svg") center center no-repeat;
   }
+
+  .no-webp .waiting__slide:nth-child(2){
+    background: url("../img/decors/02.png") center/cover no-repeat; }
+
+  .no-webp .waiting__slide:nth-child(3){
+    background: url("../img/decors/03.png") center/cover no-repeat; }
+
+  .no-webp .waiting__slide:nth-child(6){
+    background: url("../img/decors/06.png") center/cover no-repeat; }
 }
 
 @media (min-width: 61.99875em) {
@@ -4311,8 +4311,17 @@ button.swiper-pagination-bullet {
 
 .webp .waiting__slide:nth-child(1)::after{ background: url(../img/decors/01.webp) left/contain no-repeat; }
 
-.webp .waiting__slide:nth-child(2){ background: url(../img/decors/02.webp) center/cover no-repeat; }
+@media (min-width: 47.99875em){
 
-.webp .waiting__slide:nth-child(3){ background: url(../img/decors/03.webp) center/cover no-repeat; }
+  .webp .waiting__slide:nth-child(2){ background: url(../img/decors/02.webp) center/cover no-repeat; }
+}
 
-.webp .waiting__slide:nth-child(6){ background: url(../img/decors/06.webp) center/cover no-repeat; }
+@media (min-width: 47.99875em){
+
+  .webp .waiting__slide:nth-child(3){ background: url(../img/decors/03.webp) center/cover no-repeat; }
+}
+
+@media (min-width: 47.99875em){
+
+  .webp .waiting__slide:nth-child(6){ background: url(../img/decors/06.webp) center/cover no-repeat; }
+}
