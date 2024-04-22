@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240422195246">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240422222054">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -17,13 +17,13 @@
 					<button aria-label="menu-open" type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">О шоу</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+							<li class="menu__item"><a data-goto=".waiting" data-goto-header href="#" class="menu__link">О шоу</a></li>
+							<li class="menu__item"><a data-goto=".reviews" data-goto-header href="#" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a data-goto=".faq" data-goto-header href="#" class="menu__link">FAQ</a></li>
+							<li class="menu__item"><a data-goto=".contacts" data-goto-header href="#" class="menu__link">Контакты</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
 							<li class="menu__item"><a href="#" class="menu__link">Магазин</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Расписание и билеты</a></li>
+							<li class="menu__item"><a data-goto=".buying-tickets__container" data-goto-header href="#" class="menu__link">Расписание и билеты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -43,24 +43,21 @@
 						</a>
 					</li>
 				</ul>
-				<button type="button" class="header__button button button_green">Купить билеты</button>
+				<button data-goto=".buying-tickets__container" data-goto-header type="button" class="header__button button button_green">Купить билеты</button>
 			</div>
 		</header>
 		<main class="page">
 			<section data-fullscreen class="hero">
 				<div class="hero__container">
 					<h1 fadeinup data-watch data-watch-once class="hero__title title">
-						<div class="title title_desktop">
+						<div class="title">
 							Мультимедийный природный театр <span>«ВЕЛИКАНЫ Дагестана»</span>
-						</div>
-						<div class="title title_mobile">
-							Уникальное театрализованное мультимедийное лазерно-световое шоу <span>«Великаны дагестана»</span>
 						</div>
 					</h1>
 					<p fadeinup data-watch data-watch-once class="hero__descr">Вы получите незабываемые эмоции и впечатления,
 						станете частью сказочного мира, а
 						также узнаете все тайны гор Дагестана</p>
-					<button class="hero__button-arrow button-arrow">
+					<button data-goto=".waiting" data-goto-header class="hero__button-arrow button-arrow">
 						<span>Подробнее про шоу</span>
 						<svg width="80" height="13" viewBox="0 0 80 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M80 6.5L70 0.726497V12.2735L80 6.5ZM0 7.5H71V5.5H0V7.5Z" fill="#05FF00" />
@@ -1614,16 +1611,16 @@
 			<nav class="footer__menu">
 				<ul class="footer__list">
 					<li>
-						<a href="#">FAQ</a>
+						<a data-goto=".faq" data-goto-header href="#">FAQ</a>
 					</li>
 					<li>
-						<a href="#">О шоу</a>
+						<a data-goto=".waiting" data-goto-header href="#">О шоу</a>
 					</li>
 					<li>
-						<a href="#">Контакты</a>
+						<a data-goto=".contacts" data-goto-header href="#">Контакты</a>
 					</li>
 					<li>
-						<a href="#">Отзывы</a>
+						<a data-goto=".reviews" data-goto-header href="#">Отзывы</a>
 					</li>
 					<li>
 						<a href="#">Статьи</a>
@@ -1632,9 +1629,12 @@
 						<a href="#">Магазин</a>
 					</li>
 					<li>
-						<a href="#">Расписание и билеты</a>
+						<a data-goto=".buying-tickets__container" href="#">Расписание и билеты</a>
 					</li>
 				</ul>
+				<div data-da=".footer__container,767.98,last" class="footer__company-info">
+					<img src="img/company-logo.svg" alt="logo:Celicom Agency">
+				</div>
 			</nav>
 			<div class="footer__column">
 				<ul class="footer__social social social_white">
@@ -1653,7 +1653,7 @@
 						</a>
 					</li>
 				</ul>
-				<a href="#" class="footer__button">Купить билеты</a>
+				<a data-goto=".buying-tickets__container" href="#" class="footer__button">Купить билеты</a>
 				<ul class="footer__info">
 					<li>
 						<a href="#">политика конфиденциальности</a>
@@ -1668,6 +1668,7 @@
 			</div>
 		</div>
 	</footer>
+
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -1695,7 +1696,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240422195246"></script>
+	<script src="js/app.min.js?_v=20240422222054"></script>
 	<script>
 		// 2. This code loads the IFrame Player API code asynchronously.
 		var tag = document.createElement('script');

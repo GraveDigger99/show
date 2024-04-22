@@ -685,14 +685,6 @@ body {
   font-family: var(--second-family);
 }
 
-.title_desktop {
-  display: block;
-}
-
-.title_mobile {
-  display: none;
-}
-
 .subtitle {
   font-weight: 700;
   line-height: 100%;
@@ -1076,6 +1068,9 @@ body {
 }
 
 .footer__list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -1381,7 +1376,7 @@ body {
 }
 
 .team {
-  padding-bottom: 5rem;
+  padding-bottom: 3.75rem;
 }
 
 .team__topic:not(:last-child) {
@@ -1491,6 +1486,7 @@ body {
 }
 
 .contacts {
+  padding-top: 1.25rem;
   padding-bottom: 5rem;
 }
 
@@ -1900,6 +1896,7 @@ body {
 }
 
 .waiting {
+  padding-top: 1.25rem;
   padding-bottom: 5rem;
 }
 
@@ -2823,6 +2820,30 @@ button.swiper-pagination-bullet {
         flex-wrap: wrap;
   }
 
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer__column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
   .what__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3131,14 +3152,6 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
 
-  .title_desktop {
-    display: none;
-  }
-
-  .title_mobile {
-    display: block;
-  }
-
   .video-block {
     min-height: 387px;
   }
@@ -3372,37 +3385,13 @@ button.swiper-pagination-bullet {
   }
 
   .team {
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.25rem;
   }
 
   .team__items {
     -ms-grid-columns: none;
     grid-template-columns: none;
     row-gap: 3.125rem;
-  }
-
-  .team__item:nth-child(1) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-
-  .team__item:nth-child(2) {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
-  .team__item:nth-child(3) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-
-  .team__item:nth-child(4) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
 
   .contacts {
@@ -3477,6 +3466,10 @@ button.swiper-pagination-bullet {
 
   .waiting__wrapper:not(:last-child) {
     margin-bottom: 32px;
+  }
+
+  .waiting__slide {
+    min-height: 22.5rem;
   }
 
   .gallery {
